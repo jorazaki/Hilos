@@ -12,17 +12,18 @@ public class Proceso1 extends Thread{
         double factorial2 = 1; 
         double factorial3 = 1;
         
-        double numero1=30;
-        double numero2=40;
-        double numero3=10;
+        double numero1=5;
+        double numero2=6;
+        double numero3=7;
+        
         while ( numero1!=0 && numero2!=0 && numero3!=0) {
             factorial1=factorial1*numero1; numero1--;
             factorial2=factorial2*numero2; numero2--;
             factorial3=factorial3*numero3; numero3--;
         }
-        System.out.println("Proceso1 --> " + factorial1);
-        System.out.println("Proceso1 --> " + factorial2);
-        System.out.println("Proceso1 --> " + factorial3);
+        System.out.println("Proceso1 ---> Factorial de 5 es: " + Math.round(factorial1));
+        System.out.println("Proceso1 ---> Factorial de 6 es:  "  + Math.round(factorial2));
+        System.out.println("Proceso1 ---> Factorial de 7 es:  "  + Math.round(factorial3));
 //******************************
     }
 }

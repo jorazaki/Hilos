@@ -1,0 +1,16 @@
+//Numeros imPares
+package clases;
+
+//la clase Proceso2 se extiende de la Calse Thread y hereda los metodos de esta
+public class Proceso2 extends Thread{
+
+    @Override
+    public void run() {
+        for (int i = 1; i <= 10; i++) {
+            if (i%2!=0){
+            System.out.println("Proceso2 --> " + i);
+            }
+        }
+    }
+
+}

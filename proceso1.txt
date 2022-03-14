@@ -1,0 +1,28 @@
+//Factorial de 30, 40 y 10
+package clases;
+
+//la clase Proceso1 se extiende de la Calse Thread y hereda los metodos de esta
+public class Proceso1 extends Thread{
+    
+    @Override // Sobreescribe el metodo run
+    public void run(){
+        
+//******************************
+        double factorial1 = 1; 
+        double factorial2 = 1; 
+        double factorial3 = 1;
+        
+        double numero1=30;
+        double numero2=40;
+        double numero3=10;
+        while ( numero1!=0 && numero2!=0 && numero3!=0) {
+            factorial1=factorial1*numero1; numero1--;
+            factorial2=factorial2*numero2; numero2--;
+            factorial3=factorial3*numero3; numero3--;
+        }
+        System.out.println("Proceso1 --> " + factorial1);
+        System.out.println("Proceso1 --> " + factorial2);
+        System.out.println("Proceso1 --> " + factorial3);
+//******************************
+    }
+}

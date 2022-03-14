@@ -1,0 +1,28 @@
+package clases;
+
+public class ClasePrincipal {
+
+    public static void main(String[] args) {
+
+        System.out.println("Ejecucion de Procesos usando Progamacion Secuencial");
+        
+        Proceso1 pros1 = new Proceso1();   
+        Proceso2 pros2 = new Proceso2();
+        
+        pros1.run();
+        pros2.run();
+
+//******************************
+
+        //Creacion de Hilos (Objetos)
+        System.out.println("\n");
+        System.out.println("Ejecucion de Procesos usando Hilos");
+        
+        Proceso1 hilo1 = new Proceso1();   
+        Proceso2 hilo2 = new Proceso2();
+                
+        hilo1.start();
+        hilo2.start();
+        
+    }
+}
